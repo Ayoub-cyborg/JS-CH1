@@ -1,11 +1,13 @@
 let name;
 let tab = [];
 
-while (name!="exit")
+while (true)
 {
     name = prompt("Enter your name");
-    tab.push(name);
+    
+    if (name === 'exit') break
 
+    tab.push(name)
 }
 
 console.log(tab);
